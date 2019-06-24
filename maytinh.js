@@ -1,24 +1,20 @@
+let firstnumber = document.getElementById("firstnumber");
+let secondnumber = document.getElementById("secondnumber");
+let ketqua = document.getElementById("ketqua");
+
 function cong() {
-    let firstnumber = parseInt(document.getElementById("firstnumber").value);
-    let secondnumber = parseInt(document.getElementById("secondnumber").value);
-    let ketqua = firstnumber + secondnumber;
-    document.getElementById("ketqua").innerHTML= ("Addition = " +ketqua);
+    let tong = parseInt(firstnumber.value) + parseInt(secondnumber.value);
+    ketqua.innerHTML = tong;
 }
 function tru() {
-    let firstnumber = parseInt(document.getElementById("firstnumber").value);
-    let secondnumber = parseInt(document.getElementById("secondnumber").value);
-    let ketqua = firstnumber - secondnumber;
-    document.getElementById("ketqua").innerHTML= ("Subtraction = " +ketqua);
+    let hieu = parseInt(firstnumber.value) - parseInt(secondnumber.value);
+    ketqua.innerHTML = hieu;
 }
 function nhan() {
-    let firstnumber = parseInt(document.getElementById("firstnumber").value);
-    let secondnumber = parseInt(document.getElementById("secondnumber").value);
-    let ketqua = firstnumber * secondnumber;
-    document.getElementById("ketqua").innerHTML= ("Multiple = " +ketqua);
+    let tich = parseInt(firstnumber.value) * parseInt(secondnumber.value);
+    ketqua.innerHTML = tich;
 }
 function chia() {
-    let firstnumber = parseInt(document.getElementById("firstnumber").value);
-    let secondnumber = parseInt(document.getElementById("secondnumber").value);
-    let ketqua = firstnumber / secondnumber;
-    document.getElementById("ketqua").innerHTML= ("Division = " +ketqua);
+    let thuong = parseInt(firstnumber.value) / parseInt(secondnumber.value);
+    ketqua.innerHTML = thuong;
 }
