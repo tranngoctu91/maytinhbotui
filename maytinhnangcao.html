@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinhnangcao</title>
+    <link rel="stylesheet" href="maytinhnangcao.css">
+</head>
+<body>
+<input type="text" id="view"><br>
+<button class="btn" value="1" onclick="inputValue(this.value)">1</button>
+<button class="btn" value="2" onclick="inputValue(this.value)">2</button>
+<button class="btn" value="3" onclick="inputValue(this.value)">3</button>
+<br>
+<button class="btn" value="4" onclick="inputValue(this.value)">4</button>
+<button class="btn" value="5" onclick="inputValue(this.value)">5</button>
+<button class="btn" value="6" onclick="inputValue(this.value)">6</button>
+<br>
+<button class="btn" value="7" onclick="inputValue(this.value)">7</button>
+<button class="btn" value="8" onclick="inputValue(this.value)">8</button>
+<button class="btn" value="9" onclick="inputValue(this.value)">9</button>
+<button class="btn" value="0" onclick="inputValue(this.value)">0</button>
+<button class="btn" value="." onclick="inputValue(this.value)">.</button>
+<button class="opr" value="+" onclick="inputValue(this.value)">+</button>
+<button class="opr" value="-" onclick="inputValue(this.value)">-</button>
+<button class="opr" value="*" onclick="inputValue(this.value)">x</button>
+<button class="opr" value="/" onclick="inputValue(this.value)">:</button>
+<button class="result" value="=" onclick="result()">=</button>
+<button class="del" value="del" onclick="del()">DEL</button>
+</body>
+<script>
+    let view = document.getElementById("view");
+
+    function inputValue(value) {
+        view.value += value;
+    }
+
+    function result() {
+        let result = eval(view.value);
+        display(result);
+    }
+
+    function display(result) {
+        view.value = result;
+
+    }
+
+    function del() {
+        view.value = "";
+    }
+
+    display("Welcome");
+</script>
+</html>
